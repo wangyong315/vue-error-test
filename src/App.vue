@@ -1,29 +1,37 @@
 <script setup>
+import { onMounted } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 
 const jsErr = () => {
   throw new Error('js错误')
 }
+
+onMounted(() => {
+  let testNum = null
+  if(testNum.length > 1){
+    console.log('报错了')
+  }
+})
+
 </script>
 
 <template>
-  <div>
-    <button @click="jsErr">模拟js错误</button>
-  </div>
+  <header>
+    <div class="wrapper">
+      <nav>
+        <RouterLink to="/">
+          home
+        </RouterLink>
+        <RouterLink to="/about">
+          about
+        </RouterLink>
+      </nav>
+    </div>
+    <!-- <button @click="jsErr">模拟js错误</button> -->
+  </header>
   <RouterView />
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+
 </style>
