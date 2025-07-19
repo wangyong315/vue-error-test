@@ -2,15 +2,12 @@
 import { onMounted } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 
-const jsErr = () => {
-  throw new Error('js错误')
-}
-
 onMounted(() => {
   let testNum = null
-  if(testNum.length > 1){
-    console.log('报错了')
-  }
+  throw new Error('js错误')
+  testNum.forEach(element => {
+    console.log(element);
+  });
 })
 
 </script>
@@ -27,7 +24,6 @@ onMounted(() => {
         </RouterLink>
       </nav>
     </div>
-    <!-- <button @click="jsErr">模拟js错误</button> -->
   </header>
   <RouterView />
 </template>
