@@ -7,9 +7,9 @@ import { createPinia } from "pinia";
 
 const app = createApp(App)
 
-app.use(monitor, {
-    url: 'http://localhost:9800/reportData'
-})
+// app.use(monitor, {
+//     url: 'http://localhost:9800/reportData'
+// })
 app.use(router)
 app.use(createPinia())
 app.mount('#app')

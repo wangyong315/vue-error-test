@@ -4,10 +4,9 @@ import { RouterLink, RouterView } from "vue-router";
 
 onMounted(() => {
   let testNum = null
-  throw new Error('js错误')
-  testNum.forEach(element => {
-    console.log(element);
-  });
+  if(testNum.lenggth > 1){
+    console.log('报错了')
+  }
 })
 
 </script>
