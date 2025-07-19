@@ -7,6 +7,8 @@ import { createPinia } from "pinia";
 
 const app = createApp(App)
 
+
+
 app.use(monitor, {
     url: 'http://localhost:9800/reportData'
 })
