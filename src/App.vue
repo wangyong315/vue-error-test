@@ -21,6 +21,9 @@ onMounted(() => {
         <RouterLink to="/about">
           about
         </RouterLink>
+        <RouterLink to="/trigger">
+          trigger
+        </RouterLink>
       </nav>
     </div>
   </header>
