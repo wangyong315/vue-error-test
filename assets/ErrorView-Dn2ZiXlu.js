@@ -1,2 +1,0 @@
-import{c as a,a as r,b as o,r as s,o as i}from"./index-B3djyl6v.js";const l={class:"about"},g={__name:"ErrorView",setup(p){const t=()=>{testNum.length>0&&console.log("ddd")},n=()=>{throw new ReferenceError("baocuo")},c=()=>{throw new SyntaxError("baocuo")};return(_,d)=>{const e=s("el-divider");return i(),a("div",l,[r("p",{onClick:t},"触发TypeError"),o(e),r("p",{onClick:n},"触发ReferenceError"),o(e),r("p",{onClick:c},"触发SyntaxError")])}}};export{g as default};
-//# sourceMappingURL=ErrorView-Dn2ZiXlu.js.map
