@@ -44,23 +44,18 @@
 </script>
 
 <style lang="less" scoped>
-.pre-code {
-    .err-detail {
-        .error-code {
-            padding: 10px;
-            overflow: hidden;
-            word-wrap: normal;
-        }
-    }
-    .code-line {
-        padding: 4px;
-    }
-    .heightlight {
-        color: #fff;
-        background-color: red;
-    }
+.pre-code .err-detail .error-code {
+    padding: 10px;
+    overflow: hidden;
+    word-wrap: normal;
 }
 
-
+.code-line {
+    padding: 4px;
+}
+.heightlight {
+    color: #fff;
+    background-color: red;
+}
 </style>
 
