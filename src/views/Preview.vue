@@ -1,6 +1,7 @@
 <template>
     <div class="pre-code">
         <div class="error-detail">
+            {{ origin }}
             <div class="error-code" v-html="preLine()"></div>
         </div>
     </div>

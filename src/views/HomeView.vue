@@ -22,8 +22,8 @@
             </el-row>
             <el-row :gutter="20">
                 <template v-if="item.origin">
-                    {{ item.origin }}
-                    <!-- <Preview :origin="item.origin" /> -->
+                    <!-- {{ item.origin }} -->
+                    <Preview :origin="item.origin" />
                 </template>
                 <template v-else>
                     {{ item.fileName }}
@@ -97,10 +97,10 @@
         const reader = new FileReader()
         reader.readAsText(file, 'utf-8')   
         reader.onload = async(evt) => {
-            console.log("🚀 ~ reader.onload=async ~ evt:", evt)
+            console.log("🚀 ~ reader.onload=async ~ evt:", evt.target.result)
+            console.log("🚀 ~ reader.onload=async ~ stackFramesObj:", stackFramesObj)
             const code = await getSource(evt.target.result, stackFramesObj.line, stackFramesObj.column)
             console.log("🚀 ~ reader.onload=async ~ code:", code)
-            // js_error.stack_frames
             console.log("🚀 ~ reader.onload=async ~ js_error:", js_error.value)
             js_error.value.stack_frames[stackFramesObj.index].origin = code
             dialogVisible.value = false
