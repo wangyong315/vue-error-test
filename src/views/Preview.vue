@@ -1,8 +1,7 @@
 <template>
-    <div class="pre-code111">
-        <div class="error-detail111">
-            {{ origin }}
-            <div class="error-code111" v-html="preLine()"></div>
+    <div class="pre-code">
+        <div class="error-detail">
+            <pre class="error-code" v-html="preLine()"></pre>
         </div>
     </div>
 </template>
@@ -33,7 +32,7 @@
                 return newLines?.join('')
             },
             encodeHTML(str){
-                if(!str || str.length === 0) return ''
+                if(!str || str.length == 0) return ''
                 return str
                         .replace(/&/g, '&#38;') 
                         .replace(/</g, '&lt;') 
