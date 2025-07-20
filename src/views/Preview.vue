@@ -43,7 +43,7 @@
     }
 </script>
 
-<style scoped>
+<style>
 .pre-code .err-detail .error-code {
     padding: 10px;
     word-wrap: normal;
