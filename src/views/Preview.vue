@@ -43,7 +43,7 @@
     }
 </script>
 
-<style lang="less" scoped>
+<style scoped>
 .pre-code .err-detail .error-code {
     padding: 10px;
     overflow: hidden;
