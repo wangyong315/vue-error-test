@@ -2,12 +2,12 @@
 import { onMounted } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 
-onMounted(() => {
-  let testNum = null
-  if(testNum.lenggth > 1){
-    console.log('报错了')
-  }
-})
+// onMounted(() => {
+//   let testNum = null
+//   if(testNum.lenggth > 1){
+//     console.log('报错了')
+//   }
+// })
 
 </script>
 
