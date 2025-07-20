@@ -105,6 +105,7 @@
             js_error.value.stack_frames[stackFramesObj.index].origin = code
             dialogVisible.value = false
         }
+        return false
     }
 
     const getSource = async(sourcemap, line, column) => {
