@@ -28,6 +28,7 @@
                     )
 
                 }
+                console.log("🚀 ~ preLine ~ newLines:", newLines)
                 return newLines?.join('')
             },
             encodeHTML(str){
