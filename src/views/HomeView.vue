@@ -22,7 +22,7 @@
             </el-row>
             <el-row :gutter="20">
                 <template v-if="item.origin">
-                    {{ item.origin }}
+                    <Preview :origin="item.origin" />
                 </template>
                 <template v-else>
                     {{ item.fileName }}
@@ -53,6 +53,7 @@
 <script setup>
     import sourceMapJS from 'source-map-js'
     import { onMounted, ref } from 'vue';
+    import Preview from "./Preview.vue";
     import { ElMessage } from "element-plus";
     
     const activeName = ref(['1'])

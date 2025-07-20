@@ -1,7 +1,7 @@
 <template>
     <div class="pre-code">
         <div class="error-detail">
-            <pre class="error-code" v-html=""></pre>
+            <pre class="error-code" v-html="preLine()"></pre>
         </div>
     </div>
 </template>
