@@ -100,6 +100,7 @@
             const code = await getSource(evt.target.result, stackFramesObj.line, stackFramesObj.column)
             console.log("🚀 ~ reader.onload=async ~ code:", code)
             js_error.value.stack_frames[stackFramesObj.index].origin = code
+            console.log("🚀 ~ reader.onload=async ~ js_error:", js_error)
             dialogVisible.value = false
         }
     }
