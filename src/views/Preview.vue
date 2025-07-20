@@ -29,7 +29,7 @@
 
                 }
                 console.log("🚀 ~ preLine ~ newLines:", newLines)
-                return newLines?.join('')
+                return newLines.join('')
             },
             encodeHTML(str){
                 if(!str || str.length == 0) return ''
