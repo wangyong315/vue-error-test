@@ -16,7 +16,7 @@
             preLine(){
                 const line = this.origin.line
                 console.log("🚀 ~ preLine ~ origin:", this.origin)
-                const originCodeLine = this.origin.source.split('/n')
+                const originCodeLine = this.origin.source.split('\n')
                 const len = originCodeLine.length-1
                 const start = len-3>=0 ? line-3 : 0
                 const end = start+5 > len ? len : start+5

@@ -23,10 +23,10 @@
             <el-row :gutter="20">
                 <template v-if="item.origin">
                     {{ item.origin }}
-                    if <Preview :origin="item.origin" />
+                    <!-- <Preview :origin="item.origin" /> -->
                 </template>
                 <template v-else>
-                   else {{ item.fileName }}
+                    {{ item.fileName }}
                 </template>
             </el-row>
         </el-collapse-item>
