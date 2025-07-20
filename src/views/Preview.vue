@@ -1,8 +1,8 @@
 <template>
-    <div class="pre-code">
-        <div class="error-detail">
+    <div class="pre-code111">
+        <div class="error-detail111">
             {{ origin }}
-            <div class="error-code" v-html="preLine()"></div>
+            <div class="error-code111" v-html="preLine()"></div>
         </div>
     </div>
 </template>
@@ -45,9 +45,8 @@
 </script>
 
 <style scoped>
-.pre-code .err-detail .error-code {
+/* .pre-code .err-detail .error-code {
     padding: 10px;
-    overflow: hidden;
     word-wrap: normal;
 }
 
@@ -57,6 +56,6 @@
 .heightlight {
     color: #fff;
     background-color: red;
-}
+} */
 </style>
 
